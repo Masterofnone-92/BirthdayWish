@@ -127,155 +127,64 @@
       background: #ffe4ec;
       margin-top: 60px;
     }
-    .lillys {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-top: 20px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-  border: 4px solid white;
-}
 
-.favourite {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-top: 20px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-  border: 4px solid white;
-}
+    .lillys, .favourite, .meet, .love, .bond, .strong, .made, .hold, .peace, .soulmate, .choose, .sunsets {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-top: 10px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+      border: 4px solid white;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
-.meet {
-  width: 180px;
-  height: 180px;
-  border-radius: 0%;
-  object-fit: cover;
-  margin-top: 10px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-  border: 4px solid white;
-  display: block;            /* Ensures it behaves as a block element */
-  margin-left: 0;        /* Centers it horizontally */
-  
-}
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
 
-.love {
-  width: 180px;
-  height: 180px;
-  border-radius: 0%;
-  object-fit: cover;
-  margin-top: 10px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-  border: 4px solid white;
-  display: block;            /* Ensures it behaves as a block element */
-  margin-left: 0;        /* Centers it horizontally */
-  
-}
+    /* Mobile Responsiveness */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.5em;
+      }
 
-.bond {
-  width: 180px;
-  height: 180px;
-  border-radius: 0%;
-  object-fit: cover;
-  margin-top: 10px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-  border: 4px solid white;
-  display: block;            /* Ensures it behaves as a block element */
-  margin-left: 0;        /* Centers it horizontally */
-  
-}
-.strong {
-  width: 180px;
-  height: 180px;
-  border-radius: 0%;
-  object-fit: cover;
-  margin-top: 10px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-  border: 4px solid white;
-  display: block;            /* Ensures it behaves as a block element */
-  margin-left: 0;        /* Centers it horizontally */
-  
-}
-.made {
-  width: 180px;
-  height: 180px;
-  border-radius: 0%;
-  object-fit: cover;
-  margin-top: 10px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-  border: 4px solid white;
-  display: block;            /* Ensures it behaves as a block element */
-  margin-left: 0;        /* Centers it horizontally */
-  
-}
+      header p {
+        font-size: 1em;
+        padding: 0 20px;
+      }
 
-.hold {
-  width: 180px;
-  height: 180px;
-  border-radius: 0%;
-  object-fit: cover;
-  margin-top: 10px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-  border: 4px solid white;
-  display: block;            /* Ensures it behaves as a block element */
-  margin-left: 0;        /* Centers it horizontally */
-  
-}
+      section h2 {
+        font-size: 1.5em;
+      }
 
-.peace {
-  width: 180px;
-  height: 180px;
-  border-radius: 0%;
-  object-fit: cover;
-  margin-top: 10px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-  border: 4px solid white;
-  display: block;            /* Ensures it behaves as a block element */
-  margin-left: 0;        /* Centers it horizontally */
-  
-}
+      .gallery img {
+        width: 100%;
+        max-width: 180px;
+      }
 
-.soulmate {
-  width: 180px;
-  height: 180px;
-  border-radius: 0%;
-  object-fit: cover;
-  margin-top: 10px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-  border: 4px solid white;
-  display: block;            /* Ensures it behaves as a block element */
-  margin-left: 0;        /* Centers it horizontally */
-  
-}
+      .timeline li {
+        font-size: 0.9em;
+      }
 
-.choose {
-  width: 180px;
-  height: 180px;
-  border-radius: 0%;
-  object-fit: cover;
-  margin-top: 10px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-  border: 4px solid white;
-  display: block;            /* Ensures it behaves as a block element */
-  margin-left: 0;        /* Centers it horizontally */
-  
-}
+      iframe {
+        width: 100%;
+        max-width: 100%;
+        height: 250px;
+      }
 
-.sunsets {
-  width: 180px;
-  height: 180px;
-  border-radius: 0%;
-  object-fit: cover;
-  margin-top: 10px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-  border: 4px solid white;
-  display: block;            /* Ensures it behaves as a block element */
-  margin-left: 0;        /* Centers it horizontally */
-  
-}
+      .poem {
+        font-size: 1em;
+        padding: 20px;
+      }
 
-.saltbae {
+      
+
+    }
+    .saltbae {
   width: 500px;
   height: 500px;
   align-content: center;
@@ -288,10 +197,28 @@
   margin-right: auto;        /* Centers it horizontally */
   
 }
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 2em;
+      }
 
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(30px); }
-      to { opacity: 1; transform: translateY(0); }
+      header p {
+        font-size: 0.9em;
+        padding: 0 10px;
+      }
+
+      section h2 {
+        font-size: 1.3em;
+      }
+
+      .gallery img {
+        width: 100%;
+        max-width: 150px;
+      }
+
+      footer {
+        font-size: 0.8em;
+      }
     }
   </style>
 </head>
@@ -335,7 +262,6 @@
         <img src="holdinghands.jpg" alt="..." class="bond">
       </li>
 
-
       <li>2018 – We faced storms but stayed strong.
         <img src="staystrong.jpg" alt="..." class="strong">
      </li>
@@ -360,14 +286,11 @@
         <img src="choose.jpg" alt="..." class="choose">
       </li>
 
-
       <li>2024 – I can't wait to see the sunsets with you again.
         <img src="sunsets.jpg" alt="..." class="sunsets">
       </li>
     
-      <li>2025 – I made it blank because I can't wait to start our new chapters.
-        
-      </li>
+      <li>2025 – I made it blank because I can't wait to start our new chapters.</li>
     
     </ul>
   </section>
@@ -375,7 +298,7 @@
   <section class="video">
     <h2>🎥 Watch This for You</h2>
     <p>A little message I recorded with all my heart. Please watch it till the end...</p>
-    <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID_HERE" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID_HERE" title="Video Message"></iframe>
   </section>
 
   <section>
@@ -396,6 +319,7 @@
     </div>
   </section>
 
+  
   <section>
     <h2>Last but not least,always be my salt bae 😎</h2>
     <div class="Bae">
@@ -403,15 +327,9 @@
       
     </div>
   </section> 
-  
-  
-  
-  
-  
-  
+
   <footer>
     Made with all my love. I miss you. I love you. I’m waiting for you. 💕
   </footer>
-
 </body>
 </html>
