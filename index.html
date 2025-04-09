@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>To My Love</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Merriweather', serif;
+      background: linear-gradient(135deg, #fff0f6, #ffe0ec);
+      color: #333;
+      line-height: 1.7;
+    }
+
+    header {
+      background: #ffd6e0;
+      padding: 60px 20px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    header h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3em;
+      color: #d6336c;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2em;
+      color: #5c5c5c;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 0 20px;
+      animation: fadeIn 1s ease-in;
+    }
+
+    h2 {
+      color: #c9184a;
+      font-size: 1.8em;
+      border-bottom: 2px solid #f8c8dc;
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+    }
+
+    .gallery img {
+      width: 220px;
+      height: auto;
+      border-radius: 16px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .timeline {
+      list-style: none;
+      padding: 0;
+      border-left: 3px solid #f48fb1;
+    }
+
+    .timeline li {
+      margin: 12px 0;
+      padding-left: 15px;
+      position: relative;
+    }
+
+    .timeline li::before {
+      content: '';
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background: #f48fb1;
+      border-radius: 50%;
+      left: -6px;
+      top: 6px;
+    }
+
+    .video {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    iframe {
+      width: 100%;
+      max-width: 640px;
+      height: 360px;
+      border-radius: 16px;
+      border: none;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    }
+
+    .poem {
+      background: #fff1f9;
+      padding: 30px;
+      border-left: 6px solid #d6336c;
+      border-radius: 16px;
+      margin-top: 40px;
+      font-style: italic;
+      font-size: 1.1em;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.95em;
+      color: #666;
+      background: #ffe4ec;
+      margin-top: 60px;
+    }
+    .lillys {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 20px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  border: 4px solid white;
+}
+
+.favourite {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 20px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  border: 4px solid white;
+}
+
+.meet {
+  width: 180px;
+  height: 180px;
+  border-radius: 0%;
+  object-fit: cover;
+  margin-top: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  border: 4px solid white;
+  display: block;            /* Ensures it behaves as a block element */
+  margin-left: 0;        /* Centers it horizontally */
+  
+}
+
+.love {
+  width: 180px;
+  height: 180px;
+  border-radius: 0%;
+  object-fit: cover;
+  margin-top: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  border: 4px solid white;
+  display: block;            /* Ensures it behaves as a block element */
+  margin-left: 0;        /* Centers it horizontally */
+  
+}
+
+.bond {
+  width: 180px;
+  height: 180px;
+  border-radius: 0%;
+  object-fit: cover;
+  margin-top: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  border: 4px solid white;
+  display: block;            /* Ensures it behaves as a block element */
+  margin-left: 0;        /* Centers it horizontally */
+  
+}
+.strong {
+  width: 180px;
+  height: 180px;
+  border-radius: 0%;
+  object-fit: cover;
+  margin-top: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  border: 4px solid white;
+  display: block;            /* Ensures it behaves as a block element */
+  margin-left: 0;        /* Centers it horizontally */
+  
+}
+.made {
+  width: 180px;
+  height: 180px;
+  border-radius: 0%;
+  object-fit: cover;
+  margin-top: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  border: 4px solid white;
+  display: block;            /* Ensures it behaves as a block element */
+  margin-left: 0;        /* Centers it horizontally */
+  
+}
+
+.hold {
+  width: 180px;
+  height: 180px;
+  border-radius: 0%;
+  object-fit: cover;
+  margin-top: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  border: 4px solid white;
+  display: block;            /* Ensures it behaves as a block element */
+  margin-left: 0;        /* Centers it horizontally */
+  
+}
+
+.peace {
+  width: 180px;
+  height: 180px;
+  border-radius: 0%;
+  object-fit: cover;
+  margin-top: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  border: 4px solid white;
+  display: block;            /* Ensures it behaves as a block element */
+  margin-left: 0;        /* Centers it horizontally */
+  
+}
+
+.soulmate {
+  width: 180px;
+  height: 180px;
+  border-radius: 0%;
+  object-fit: cover;
+  margin-top: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  border: 4px solid white;
+  display: block;            /* Ensures it behaves as a block element */
+  margin-left: 0;        /* Centers it horizontally */
+  
+}
+
+.choose {
+  width: 180px;
+  height: 180px;
+  border-radius: 0%;
+  object-fit: cover;
+  margin-top: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  border: 4px solid white;
+  display: block;            /* Ensures it behaves as a block element */
+  margin-left: 0;        /* Centers it horizontally */
+  
+}
+
+.sunsets {
+  width: 180px;
+  height: 180px;
+  border-radius: 0%;
+  object-fit: cover;
+  margin-top: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  border: 4px solid white;
+  display: block;            /* Ensures it behaves as a block element */
+  margin-left: 0;        /* Centers it horizontally */
+  
+}
+
+.saltbae {
+  width: 500px;
+  height: 500px;
+  align-content: center;
+  object-fit: cover;
+  margin-top: 20px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  border: 4px solid white;
+            /* Ensures it behaves as a block element */
+  margin-left: auto;
+  margin-right: auto;        /* Centers it horizontally */
+  
+}
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>To My Love</h1>
+    <p>Even if we're miles apart, you're always in my heart. Happy Birthday, my forever ❤️</p>
+    <img src="lillys.jpg" alt="Us Together" class="lillys">
+  </header>
+
+  <section>
+    <h2>💌 A Letter from My Heart</h2>
+    <p>
+      My love, I know the last few months haven’t been easy for us. But not a single day has passed without me thinking of you, missing your voice, and craving your presence. You’re the one my heart beats for, and today, on your birthday, I just want to remind you how incredibly special you are to me. I'm sorry for the distance, the silence, the pain. But my love for you remains unshaken—deep, true, and forever.
+    </p>
+  </section>
+
+  <section>
+    <h2>📸 Our Sweet Memories</h2>
+    <div class="gallery">
+      <img src="photo1.jpg" alt="Memory 1">
+      <img src="photo2.jpg" alt="Memory 2">
+      <img src="photo3.jpg" alt="Memory 3">
+      <!-- Add more as needed -->
+    </div>
+  </section>
+
+  <section>
+    <h2>📖 Our Love Story</h2>
+    <ul class="timeline">
+      <li>2015 – We met. And the world changed for me.
+        <img src="Wemeet.jpg" alt="..." class="meet">
+      </li>
+      
+      <li>2016 – We fell in love, deep and real.
+        <img src="felinlove.jpg" alt="..." class="love">
+      </li>
+
+      <li>2017 – We promised forever.
+        <img src="holdinghands.jpg" alt="..." class="bond">
+      </li>
+
+
+      <li>2018 – We faced storms but stayed strong.
+        <img src="staystrong.jpg" alt="..." class="strong">
+     </li>
+
+      <li>2019 – We finally made it.
+        <img src="madeit.jpg" alt="..." class="made">
+      </li>
+      
+      <li>2020 – We hold on to each other.
+        <img src="holdon.jpg" alt="..." class="hold">
+      </li>
+
+      <li>2021 – In your arms, I found my peace 🤗💖.
+        <img src="peace.jpg" alt="..." class="peace">
+      </li>
+
+      <li>2022 – I started to believe soulmate is real.
+        <img src="soulmate.jpg" alt="..." class="soulmate">
+      </li>
+
+      <li>2023 – I still choose you, every single day.
+        <img src="choose.jpg" alt="..." class="choose">
+      </li>
+
+
+      <li>2024 – I can't wait to see the sunsets with you again.
+        <img src="sunsets.jpg" alt="..." class="sunsets">
+      </li>
+    
+      <li>2025 – I made it blank because I can't wait to start our new chapters.
+        
+      </li>
+    
+    </ul>
+  </section>
+
+  <section class="video">
+    <h2>🎥 Watch This for You</h2>
+    <p>A little message I recorded with all my heart. Please watch it till the end...</p>
+    <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID_HERE" allowfullscreen></iframe>
+  </section>
+
+  <section>
+    <h2>💖 My Words for You</h2>
+    <div class="poem">
+        <img src="Favourite.jpg" alt="..." class="favourite">
+        
+        If you ever get the chance I highly recommend you find a best friend,<br/>
+         someone who lights up every room, <br/>
+         someone who lifts up anyone and everyone who needs a hand, <br/>
+         someone who aims to always leave things better than when she found them, <br/>
+         someone who can make you laugh so hard you cry and cry so hard you laugh.<br/> 
+         Someone who sees right through your game and isn't afraid to call you on it. <br/>
+         Someone who operates with wonder and curiosity and fierce commitment to growing beyond anything that might try to confine her.<br/> 
+         ---- you're the stuff that dreams are made of and I couldn't be happier that you were born.<br/>
+         Happy Birthday to the love of my life 🎂 <br/>
+         - thanks for taking me along for the ride.💗
+    </div>
+  </section>
+
+  <section>
+    <h2>Last but not least,always be my salt bae 😎</h2>
+    <div class="Bae">
+      <img src="saltbae.jpg" class="saltbae">
+      
+    </div>
+  </section> 
+  
+  
+  
+  
+  
+  
+  <footer>
+    Made with all my love. I miss you. I love you. I’m waiting for you. 💕
+  </footer>
+
+</body>
+</html>
